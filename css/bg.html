@@ -7,20 +7,21 @@
     <title>Document</title>
     <style>
         body {
-            background-color: #3336e2;
-            background-image: url('https://picsum.photos/id/35/800');
-            background-repeat: no-repeat;
+            /* background-color: #3336e2; */
+            /* background-image: url('https://picsum.photos/id/35/800'); */
+            /* background-repeat: no-repeat; */
             /* no-repeat, repeat-x,repeat-y,repeat */
-            background-position:center;
+            /* background-position:center; */
             /* left,right,top,bottom,center */
-            background-attachment: fixed;
+            /* background-attachment: fixed; */
             /* scroll,fixed */
 
-            background-size: cover;
+            /* background-size: cover; */
             /* cover, contain */
 
-            background-blend-mode: screen;
-            /* screen 濾色(去黑留白)
+            /* background-blend-mode: screen; */
+            /* 
+            screen 濾色(去黑留白)
             multiply 色彩增值(去白留黑)
             overlay 覆蓋
             darken 變暗
@@ -33,8 +34,35 @@
             color-burn 加深顏色
             color-dodge 加亮顏色
             exclusion 排除
-            difference 差異化 */
+            difference 差異化 
+            */
+
+            /* background: red url('https://picsum.photos/id/35/800') no-repeat fixed center / cover ; */
+        
+            /* background-image: linear-gradient(to right, red 33%,blue 33%,blue 66%,yellow 66% ); */
+            /* background-image: repeating-linear-gradient(to right, red 0px, red 10px,blue 10px ,blue 20px); */
+            /* background-image: repeating-linear-gradient(to right, red 0px,blue 20px); */
+            background-attachment: fixed;
+            /* background-image: 
+                linear-gradient(rgba(0, 0, 255, 0.425),rgba(0, 0, 255, 0.425)),
+                url('https://picsum.photos/id/35/800')
+                ; */
+            /* background-image: 
+                repeating-linear-gradient(45deg,rgba(0,0,0,0.5) 0px,rgba(0,0,0,0.5) 1px,transparent 1px,transparent 2px),
+                repeating-linear-gradient(135deg,rgba(0,0,0,0.5) 0px,rgba(0,0,0,0.5) 1px,transparent 1px,transparent 2px),
+                url('https://picsum.photos/id/35/800')
+                ;
+                background-size: cover; */
+
+            /* background-image: radial-gradient(red 50%, blue 50%); */
+            /* background-image: repeating-radial-gradient(red 0px, blue 50px); */
         }
+        /* body {
+            background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0),
+    linear-gradient(135deg, transparent 37%, #a85 0, #a85 63%, transparent 0),
+    linear-gradient(45deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;
+    background-size: 25px 25px;
+        } */
     </style>
 </head>
 <body>
