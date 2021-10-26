@@ -1,0 +1,9 @@
+$color: red;
+$column: 24;
+
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        flex: 0 0 100% / $column * $i;
+    }
+}
