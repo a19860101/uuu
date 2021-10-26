@@ -1,5 +1,19 @@
 * {
   box-sizing: border-box;
+  font-family: 'Segoe UI';
+}
+
+h1, h2, h3, h4, h5, h6, p, div, ul, li, ol, article, aside, header, footer, nav, section, nav {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+table, td, th {
+  border-collapse: collapse;
 }
 
 .container {
@@ -234,6 +248,10 @@
 [class^="col"] {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.btn {
+  background-color: #fff;
 }
 
 .m-1 {
