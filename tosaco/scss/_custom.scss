@@ -2,12 +2,17 @@ li {
     list-style: none;
 }
 nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #ccc;
+    padding: 0 40vw;
+    margin-top: 100px;
+    // position: relative;
+    // top:150px;
+
     ul {
         display: flex;
-        justify-content: center;
-        li:nth-of-type(3){
-            margin-right: 30vw;
-        }
     }
     .logo {
         width: 100px;
@@ -18,5 +23,13 @@ nav {
         margin: auto;
         left: 50%;
         transform: translateX(-50%);
+    }
+}
+
+header {
+    width: 85%;
+    margin: auto;
+    img {
+        width: 100%;
     }
 }

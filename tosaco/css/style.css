@@ -3,7 +3,7 @@
   font-family: 'Segoe UI';
 }
 
-h1, h2, h3, h4, h5, h6, p, div, ul, li, ol, article, aside, header, footer, nav, section, nav {
+html, body, h1, h2, h3, h4, h5, h6, p, div, ul, li, ol, article, aside, header, footer, nav, section, nav {
   margin: 0;
   padding: 0;
 }
@@ -446,13 +446,17 @@ li {
   list-style: none;
 }
 
-nav ul {
+nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #ccc;
+  padding: 0 40vw;
+  margin-top: 100px;
 }
 
-nav ul li:nth-of-type(3) {
-  margin-right: 30vw;
+nav ul {
+  display: flex;
 }
 
 nav .logo {
@@ -465,5 +469,14 @@ nav .logo {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+header {
+  width: 85%;
+  margin: auto;
+}
+
+header img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
