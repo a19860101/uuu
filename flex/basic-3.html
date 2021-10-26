@@ -10,7 +10,7 @@
             width: 1200px;
             margin: auto;
             display: flex;
-            background-color: #ccc;
+            background-color: #807f7f;
             flex-direction: row;
             flex-wrap: wrap;
 
@@ -18,13 +18,15 @@
         .box {
             /* width: 200px; */
             height: 300px;
-            flex-basis: 200px;
+            flex: 0 0 200px;
+            /* flex : grow shrink basis */
+            /* flex-basis: 200px; */
             /* 
                 flex-direction為row時，flex-basis為寬度
                 flex-direction為column時，flex-basis為高度
             */
-            flex-grow:;
-            flex-shrink: 1;
+            /* flex-grow:0; */
+            /* flex-shrink: 1; */
             /* 
                 flex-shrink預設為1，但flex-wrap若開啟換行，flex-shrink會失效
             */
@@ -33,23 +35,20 @@
         }
         .box:nth-of-type(1){
             background-color: #fa0;
+            /* flex-grow:2; */
         }
         .box:nth-of-type(2){
             background-color: #0af;
+            /* flex-grow:3; */
         }
         .box:nth-of-type(3){
             background-color: #bada55;
+            /* flex-grow:1; */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
