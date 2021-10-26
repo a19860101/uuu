@@ -1,0 +1,11 @@
+$spacing: 0.5rem;
+
+@for $i from 1 through 10 {
+    .m-#{$i}{
+        margin: $i * $spacing;
+    }
+    .ml-#{$i}{
+        margin-left: $i * $spacing;
+    }
+
+}

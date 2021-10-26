@@ -1,26 +1,4 @@
-$column: 24;
-$colors:red green blue;
-$breakpoints:(
-    sm:520px,
-    md:720px,
-    lg:1200px,
-    xl:1440px
-);
-
-@for $i from 1 through 12 {
-    .col-#{$i} {
-        flex: 0 0 100% / $column * $i;
-    }
-}
-
-@each $color in $colors {
-    .btn-#{$color}{
-        background-color: $color;
-    }
-}
-
-@each $key,$val in $breakpoints {
-    .container-#{$key}{
-        width: $val;
-    }
-}
+@import "var";
+@import "grid";
+// @import "btn";
+@import "spacing";
