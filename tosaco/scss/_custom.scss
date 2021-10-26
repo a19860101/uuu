@@ -1,0 +1,22 @@
+li {
+    list-style: none;
+}
+nav {
+    ul {
+        display: flex;
+        justify-content: center;
+        li:nth-of-type(3){
+            margin-right: 30vw;
+        }
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+        background-color: #f00;
+        display: block;
+        position: absolute;
+        margin: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
