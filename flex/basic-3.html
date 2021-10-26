@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            background-color: #ccc;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+        .box {
+            /* width: 200px; */
+            height: 300px;
+            flex-basis: 200px;
+            /* 
+                flex-direction為row時，flex-basis為寬度
+                flex-direction為column時，flex-basis為高度
+            */
+            flex-grow:;
+            flex-shrink: 1;
+            /* 
+                flex-shrink預設為1，但flex-wrap若開啟換行，flex-shrink會失效
+            */
+
+            background-color: pink;
+        }
+        .box:nth-of-type(1){
+            background-color: #fa0;
+        }
+        .box:nth-of-type(2){
+            background-color: #0af;
+        }
+        .box:nth-of-type(3){
+            background-color: #bada55;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
