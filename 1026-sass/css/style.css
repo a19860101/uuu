@@ -45,4 +45,32 @@
 .col-12 {
   flex: 0 0 50%;
 }
+
+.btn-red {
+  background-color: red;
+}
+
+.btn-green {
+  background-color: green;
+}
+
+.btn-blue {
+  background-color: blue;
+}
+
+.container-sm {
+  width: 520px;
+}
+
+.container-md {
+  width: 720px;
+}
+
+.container-lg {
+  width: 1200px;
+}
+
+.container-xl {
+  width: 1440px;
+}
 /*# sourceMappingURL=style.css.map */
