@@ -1,11 +1,13 @@
-$spacing: 0.5rem;
 
-@for $i from 1 through 10 {
+@for $i from 0 through 10 {
     .m-#{$i}{
         margin: $i * $spacing;
     }
-    .ml-#{$i}{
-        margin-left: $i * $spacing;
-    }
-
+    // @each $name,$direc in $direction {
+    //     @each $size,$width in $breakpoints {
+    //         .m#{$name}-#{$size}-#{$i}{
+    //             margin-#{$direc}:$i * $spacing;
+    //         }
+    //     }
+    // }
 }

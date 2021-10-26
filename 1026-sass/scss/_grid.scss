@@ -9,6 +9,9 @@
     .col-#{$i}{
         flex: 0 0 100% / $column * $i;
     }
+    .col {
+        flex: 1 0 0;
+    }
 }
 @each $name,$width in $breakpoints {
     @media (min-width: $width){
@@ -19,6 +22,9 @@
         @for $i from 1 through $column {
             .col-#{$name}-#{$i}{
                 flex: 0 0 100% / $column * $i;
+            }
+            .col-#{$name}{
+                flex: 1 0 0;
             }
         }
     }
