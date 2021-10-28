@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #fa0;
+
+            transition: all 1s 3s ease;
+            /* transition-property: all; */
+            /* transition-duration: 1s; */
+            /* transition-delay: 3s; */
+            /* transition-timing-function: ease; */
+            /* ease, ease-in, ease-out, ease-in-out, linear, cubic-bezier */
+
+            /* transition-property: width, height, background-color; */
+            /* transition-duration: 1s; */
+            /* transition-delay: 0s,1s,2s; */
+
+            transition: width 1s 0s,height 1s 1s, background-color 1s 2s;
+        }
+        .box:hover {
+            background-color: #0af;
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        asdf
+    </div>
+</body>
+</html>
