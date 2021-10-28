@@ -118,6 +118,16 @@ header {
             }
         }
     }
-    
+}
+#wave-1 {
+    width: 100%;
+    height: 300px;
+    background: url('../images/wave.svg')no-repeat center;
+    background-size: cover;
+}
+
+#news {
+    height: 600px;
+    background-color: #ccc;
 }
 
