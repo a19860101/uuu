@@ -71,12 +71,13 @@ header {
     img {
         width: 100%;
         // border-radius: 50%;
-        clip-path: circle();
+        // clip-path: circle();
     }
     .feature-item {
         padding: 0 40px;
+        position: relative;
+
         &:nth-of-type(3){
-            position: relative;
             top: 100px;
         }
         .feature-content {
@@ -89,6 +90,32 @@ header {
             top: -100px;
             right: 30px;
             width: 100px;
+        }
+        .yuzu {
+            position: absolute;
+            width: 100px;
+            right: 0;
+            top: 160px;
+        }
+    }
+    .container {
+        position: relative;
+        .more {
+            display: inline-block;
+            position: absolute;
+            bottom: -200px;
+            right: 0;
+            a {
+                color: #000;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .beer {
+                width: 100px;
+                position: absolute;
+                right: 0;
+                bottom: 50px;
+            }
         }
     }
     

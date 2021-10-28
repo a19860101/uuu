@@ -524,16 +524,14 @@ header .header-content {
 
 #feature img {
   width: 100%;
-  -webkit-clip-path: circle();
-          clip-path: circle();
 }
 
 #feature .feature-item {
   padding: 0 40px;
+  position: relative;
 }
 
 #feature .feature-item:nth-of-type(3) {
-  position: relative;
   top: 100px;
 }
 
@@ -549,5 +547,36 @@ header .header-content {
   top: -100px;
   right: 30px;
   width: 100px;
+}
+
+#feature .feature-item .yuzu {
+  position: absolute;
+  width: 100px;
+  right: 0;
+  top: 160px;
+}
+
+#feature .container {
+  position: relative;
+}
+
+#feature .container .more {
+  display: inline-block;
+  position: absolute;
+  bottom: -200px;
+  right: 0;
+}
+
+#feature .container .more a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#feature .container .more .beer {
+  width: 100px;
+  position: absolute;
+  right: 0;
+  bottom: 50px;
 }
 /*# sourceMappingURL=style.css.map */
