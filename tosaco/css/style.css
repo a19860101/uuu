@@ -579,4 +579,16 @@ header .header-content {
   right: 0;
   bottom: 50px;
 }
+
+#qq {
+  height: 1200px;
+  background-image: url("../images/wave.svg");
+  background-size: cover;
+}
+
+#qq2 {
+  padding-top: 300px;
+  padding-bottom: 300px;
+  background-color: #ccc;
+}
 /*# sourceMappingURL=style.css.map */
