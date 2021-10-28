@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .space {
+            width: 200px;
+            height: 100px;
+            position: relative;
+            perspective: 800px;
+            margin: 20% auto;
+        }
+        .carousel {
+            transform-style: preserve-3d;
+            transition: 5s;
+        }
+        .space:hover .carousel{
+            transform: rotateY(360deg);
+        }
+        .carousel,.plane {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        .plane {
+            background-image: linear-gradient(to top left, blue, red);
+            opacity: .6;
+        }
+        .plane:nth-of-type(1){
+            transform: rotateY(calc(60deg * 0))translateZ(200px);
+        }
+        .plane:nth-of-type(2){
+            transform: rotateY(calc(60deg * 1))translateZ(200px);
+        }
+        .plane:nth-of-type(3){
+            transform: rotateY(calc(60deg * 2))translateZ(200px);
+        }
+        .plane:nth-of-type(4){
+            transform: rotateY(calc(60deg * 3))translateZ(200px);
+        }
+        .plane:nth-of-type(5){
+            transform: rotateY(calc(60deg * 4))translateZ(200px);
+        }
+        .plane:nth-of-type(6){
+            transform: rotateY(calc(60deg * 5))translateZ(200px);
+        }
+    </style>
+</head>
+<body>
+    <div class="space">
+        <div class="carousel">
+            <div class="plane"></div>
+            <div class="plane"></div>
+            <div class="plane"></div>
+            <div class="plane"></div>
+            <div class="plane"></div>
+            <div class="plane"></div>
+        </div>
+    </div>
+</body>
+</html>
