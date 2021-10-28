@@ -500,7 +500,7 @@ header .header-content {
 }
 
 .left, .right {
-  width: 300px;
+  width: 400px;
   height: 150px;
   background: green;
   position: absolute;
@@ -514,5 +514,40 @@ header .header-content {
 .right {
   right: 0;
   bottom: 0;
+}
+
+#feature {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  position: relative;
+}
+
+#feature img {
+  width: 100%;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+#feature .feature-item {
+  padding: 0 40px;
+}
+
+#feature .feature-item:nth-of-type(3) {
+  position: relative;
+  top: 100px;
+}
+
+#feature .feature-item .feature-content {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#feature .feature-item .bird {
+  -webkit-clip-path: initial;
+          clip-path: initial;
+  position: absolute;
+  top: -100px;
+  right: 30px;
+  width: 100px;
 }
 /*# sourceMappingURL=style.css.map */

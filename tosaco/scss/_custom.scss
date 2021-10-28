@@ -50,7 +50,7 @@ header {
 
 }
 .left,.right {
-    width: 300px;
+    width: 400px;
     height: 150px;
     background: green;
     position: absolute;
@@ -62,4 +62,34 @@ header {
 .right {
     right: 0;
     bottom: 0;
+}
+
+#feature {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    position: relative;
+    img {
+        width: 100%;
+        // border-radius: 50%;
+        clip-path: circle();
+    }
+    .feature-item {
+        padding: 0 40px;
+        &:nth-of-type(3){
+            position: relative;
+            top: 100px;
+        }
+        .feature-content {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .bird {
+            clip-path: initial;
+            position: absolute;
+            top: -100px;
+            right: 30px;
+            width: 100px;
+        }
+    }
+    
 }
