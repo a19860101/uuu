@@ -9,9 +9,11 @@
     <style>
         .container {
             width: 100%;
+            height: 1200px;
+            background-color: #ccc;
             display: grid;
-            grid-template-columns: repeat(5,1fr);
-            grid-auto-rows: 100px;
+            grid-template-columns: repeat(5,100px);
+            /* grid-auto-rows: 100px; */
 
             grid-template-areas: 
                 'main main main main main'
@@ -19,6 +21,14 @@
                 'aside aside aside aside aside'
                 'footer footer footer footer footer'
             ;
+
+            justify-content:center ;
+            align-content: center;
+            /* start,center,end,space-around,space-between ,space-evenly */
+
+            /* justify-items: center; */
+            align-items: stretch ;
+            /* start,center,end,stretch*/
         }
         @media(min-width:1000px){
             .container {
@@ -34,10 +44,15 @@
         nav {
             background-color: #098;
             grid-area: nav;
+
+
+            justify-self: center;
         }
         aside {
             background-color: #fa0;
             grid-area: aside;
+
+            align-self: end;
         }
         main {
             background-color: #e04;
@@ -51,10 +66,37 @@
 </head>
 <body>
     <div class="container">
-        <nav></nav>
-        <aside></aside>
-        <main></main>
-        <footer></footer>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+        <aside>
+            <ul>
+                <li>list</li>
+                <li>list</li>
+                <li>list</li>
+                <li>list</li>
+                <li>list</li>
+                <li>list</li>
+                <li>list</li>
+            </ul>
+        </aside>
+        <main>
+            <h1>title</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius est reprehenderit dolores blanditiis excepturi aperiam eveniet id sint hic doloribus quisquam itaque perferendis a sed fugiat, quis rerum! Eaque, incidunt!
+            </p>
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sit repellendus rem impedit, ullam vero quos blanditiis amet eveniet a itaque obcaecati quidem ab necessitatibus ut harum eligendi atque? Suscipit.
+            </p>
+        </main>
+        <footer>
+            footer
+        </footer>
     </div>
 </body>
 </html>
