@@ -25,20 +25,24 @@
             left: 0;
             top: 0;
             z-index: 0;
-            transform: scaleY(0);
-            transform-origin: bottom;
+            transform: scaleX(0);
+            transform-origin: left;
             transition: .6s;
         }
         .link span {
             position: relative;
         }
         .link:hover::before {
-            transform: scaleY(1);
+            transform: scaleX(1);
         }
+
     </style>
 </head>
 <body>
     <a href="#" class="link">
+        <span>link</span>
+    </a>
+    <a href="#" class="link2">
         <span>link</span>
     </a>
 </body>
