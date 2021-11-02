@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .link {
+            width: 200px;
+            display: inline-block;
+            background-color: #fa0;
+            padding: 15px 10px;
+            text-decoration: none;
+            color: #000;
+            position: relative;
+        }
+        .link::before {
+            content:'';
+            width: 100%;
+            height: 100%;
+            background-color: #0af;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
+            transform: scaleY(0);
+            transform-origin: bottom;
+            transition: .6s;
+        }
+        .link span {
+            position: relative;
+        }
+        .link:hover::before {
+            transform: scaleY(1);
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="link">
+        <span>link</span>
+    </a>
+</body>
+</html>
